@@ -1,13 +1,10 @@
 <?php
 
-
 require_once __DIR__ . "/Entity/TodoList.php";
 require_once __DIR__ . "/helper/InputHelper.php";
 require_once __DIR__ . "/Repository/TodoListRepository.php";
 require_once __DIR__ . "/Service/TodoListService.php";
 require_once __DIR__ . "/view/TodoListView.php";
-
-
 
 use Entity\TodoList;
 use Repository\TodoListRepositoryImpl;
