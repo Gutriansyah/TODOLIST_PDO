@@ -19,7 +19,7 @@ namespace View {
         {
             while (true) {
                 $this->todoListService->showTodoList();
-                echo " Menu " . PHP_EOL;
+                echo "Menu :" . PHP_EOL;
                 echo " 1. Tambah Todo " . PHP_EOL;
                 echo " 2. Hapus Todo " . PHP_EOL;
                 echo " x. Keluar " . PHP_EOL;
