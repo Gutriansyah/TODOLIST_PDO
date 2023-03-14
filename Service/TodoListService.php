@@ -30,12 +30,12 @@ namespace Service {
         function showTodoList(): void
         {
 
-            echo " TOOO LIST " . PHP_EOL;
+            echo "TODO LIST :" . PHP_EOL;
             // * mengambil data dari repository 
             // * data pada class TodolistRepository
             $todoList = $this->todoListRepository->findAll();
-            foreach ($todoList as $number => $value) {
-                echo $number . " " . $value->getTodo() . PHP_EOL;
+            foreach ($todoList as $value) {
+                echo " " . $value->getId() . "." . $value->getTodo() . PHP_EOL;
             }
         }
 
@@ -51,9 +51,9 @@ namespace Service {
         function removeTodoList(int $number): void
         {
             if ($this->todoListRepository->remove($number)) {
-                echo "Sukes menghapus todolist";
+                echo "Sukes menghapus todolist" . PHP_EOL;
             } else {
-                echo "Gagal menghapus Todolist -> nomor tidak di temukan";
+                echo "Gagal menghapus Todolist -> nomor tidak di temukan" . PHP_EOL;
             }
         }
     }
