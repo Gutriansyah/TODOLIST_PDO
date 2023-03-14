@@ -53,7 +53,7 @@ namespace Service {
             if ($this->todoListRepository->remove($number)) {
                 echo "Sukes menghapus todolist";
             } else {
-                echo "Gagal menghapus Todolist";
+                echo "Gagal menghapus Todolist -> nomor tidak di temukan";
             }
         }
     }
