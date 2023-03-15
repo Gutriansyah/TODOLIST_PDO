@@ -40,11 +40,12 @@ namespace Repository {
         function remove(int $number): bool
         {
 
-
+            // * melakukan pengecekan data yang kaan di hapus
             $sql = "SELECT id FROM todolist WHERE id = ?";
             $statment = $this->connection->prepare($sql);
             $statment->execute([$number]);
 
+            // * cek data yang dicek dengan fungsi fetch
             if ($statment->fetch()) {
                 $sql = "DELETE FROM todolist WHERE id = ?";
                 $statment = $this->connection->prepare($sql);
