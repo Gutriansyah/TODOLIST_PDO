@@ -22,7 +22,6 @@ $Repository = new TodoListRepositoryImpl($connection);
 $Service = new TodoListServiceImpl($Repository);
 $View = new TodoListView($Service);
 
-
 $View->showTodoList();
 
 $connection = null;
