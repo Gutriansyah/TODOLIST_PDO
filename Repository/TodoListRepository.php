@@ -19,7 +19,7 @@ namespace Repository {
     class TodoListRepositoryImpl implements TodoListRepository
     {
 
-        public array $todolist = array();
+        // public array $todolist = array();
 
         private PDO $connection;
 

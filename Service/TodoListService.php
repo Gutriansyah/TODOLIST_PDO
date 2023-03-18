@@ -51,7 +51,7 @@ namespace Service {
         function removeTodoList(int $number): void
         {
             // * melakukan perulangan dengan return value dari funcion remove
-            // * if true tammapilkan pesan 
+            // * if true tammapilkan pesan lese
             if ($this->todoListRepository->remove($number)) {
                 echo "Sukes menghapus todolist" . PHP_EOL;
             } else {
