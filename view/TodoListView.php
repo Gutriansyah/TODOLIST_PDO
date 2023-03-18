@@ -32,7 +32,9 @@ namespace View {
                     $this->removeTodoList();
                 } else if ($pilihan == "x") {
                     break;
-                } else echo "Pilihan Tidak Dimengerti" . PHP_EOL;
+                } else {
+                    echo "Pilihan Tidak Dimengerti" . PHP_EOL;
+                }
             }
             echo "sampai jumpa lagi" . PHP_EOL;
         }
@@ -52,7 +54,7 @@ namespace View {
 
         function removeTodoList(): void
         {
-            echo " menghapus todo";
+            echo " menghapus todo";     
             $input = InputHelper::input("nomor (x untuk batalkan)");
 
             if ($input == "x") {
